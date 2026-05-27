@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Video Games
+    a(href='/update-cobj') Add to this table
+    br
+    br
+    table
+      thead
+        tr
+          th Name
+          th Publisher
+          th Price
+      tbody
+        each game in data
+          tr
+            td #{game.properties.name}
+            td #{game.properties.publisher}
+            td #{game.properties.price}

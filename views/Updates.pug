@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Add a Video Game
+    br
+    a(href='/') Return to the homepage
+    br
+    br
+    form(method='POST' action='/update-cobj')
+      label Name
+      br
+      input(type='text' name='name')
+      br
+      br
+      label Publisher
+      br
+      input(type='text' name='publisher')
+      br
+      br
+      label Price
+      br
+      input(type='number' name='price')
+      br
+      br
+      button(type='submit') Submit
